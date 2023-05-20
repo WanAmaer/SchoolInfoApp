@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TVTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File a Complaint"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/BtnSafetyConcerns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Concerns" />
+
+    <Button
+        android:id="@+id/BtnTeachingLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teaching and Learning" />
+
+    <Button
+        android:id="@+id/BtnFacilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facilities" />
+
+    <Button
+        android:id="@+id/BtnStudentBehaviour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Behaviour" />
+
+    <Button
+        android:id="@+id/BtnAdministration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administration" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_payment"
+    app:startDestination="@id/DestHomePage">
+
+    <fragment
+        android:id="@+id/DestPayment"
+        android:name="com.example.payment.PaymentHomeFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_paymenthome">
+        <action
+            android:id="@+id/NextToDonation"
+            app:destination="@id/DestDonation" />
+        <action
+            android:id="@+id/NextToFees"
+            app:destination="@id/DestFees" />
+        <action
+            android:id="@+id/NextToTransaction"
+            app:destination="@id/DestTransaction" />
+        <action
+            android:id="@+id/NextToHomePage"
+            app:destination="@id/DestHomePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/DestFees"
+        android:name="com.example.payment.FeesFragment"
+        android:label="Fees"
+        tools:layout="@layout/fragment_fees" >
+        <action
+            android:id="@+id/NextToBankList"
+            app:destination="@id/DestBankList" />
+        <action
+            android:id="@+id/NextToCardInfo"
+            app:destination="@id/DestCardInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/DestDonation"
+        android:name="com.example.payment.DonationFragment"
+        android:label="Donation"
+        tools:layout="@layout/fragment_donation" >
+        <action
+            android:id="@+id/NextToCardInfo2"
+            app:destination="@id/DestCardInfo2" />
+        <action
+            android:id="@+id/NextToBankList2"
+            app:destination="@id/DestBankList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/DestTransaction"
+        android:name="com.example.payment.TransactionHistoryFragment"
+        android:label="Transaction HIstory"
+        tools:layout="@layout/fragment_transaction_history" />
+    <fragment
+        android:id="@+id/DestHomePage"
+        android:name="com.example.payment.HomePageFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/NextToAcademicTracker"
+            app:destination="@id/DestAcademicTracker" />
+        <action
+            android:id="@+id/NextToChat"
+            app:destination="@id/DestChat" />
+        <action
+            android:id="@+id/NextToSignIn"
+            app:destination="@id/DestSignIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/DestAcademicTracker"
+        android:name="com.example.payment.AcademicTrackerFragment"
+        android:label="Academic Tracker"
+        tools:layout="@layout/fragment_academic_tracker" />
+    <fragment
+        android:id="@+id/DestChat"
+        android:name="com.example.payment.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/DestSignIn"
+        android:name="com.example.payment.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/DestBankList"
+        android:name="com.example.payment.BankList"
+        android:label="Bank List"
+        tools:layout="@layout/fragment_bank_list" />
+    <fragment
+        android:id="@+id/DestCardInfo"
+        android:name="com.example.payment.CardInfoFragment"
+        android:label="fragment_card_info"
+        tools:layout="@layout/fragment_card_info" />
+    <fragment
+        android:id="@+id/DestBankList2"
+        android:name="com.example.payment.BankList2Fragment"
+        android:label="fragment_bank_list2"
+        tools:layout="@layout/fragment_bank_list2" />
+    <fragment
+        android:id="@+id/DestCardInfo2"
+        android:name="com.example.payment.CardInfo2"
+        android:label="fragment_card_info2"
+        tools:layout="@layout/fragment_card_info2" />
+</navigation>

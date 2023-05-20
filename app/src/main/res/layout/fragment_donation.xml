@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/TVAmountOfDonation"
+        android:layout_width="190dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/amount_of_donation"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/put_your_amount_here"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#DD2C00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVAmountOfDonation" />
+
+    <TextView
+        android:id="@+id/TVPaymentMethod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="340dp"
+        android:text="@string/payment_method"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/BtnCreditCardDonation"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/blackborder"
+        android:contentDescription="@string/credit"
+        android:labelFor="@id/TVPaymentMethod2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/creditcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPaymentMethod2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/blackborder"
+        android:contentDescription="@string/fpx"
+        android:labelFor="@id/TVPaymentMethod2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fpxlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPaymentMethod2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

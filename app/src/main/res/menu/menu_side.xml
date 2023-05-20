@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/SideNavMain">
+        <item
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            android:title="@string/academic_tracker" />
+        <item
+            android:icon="@drawable/ic_baseline_chat_24"
+            android:title="@string/chat" />
+        <item
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="@string/payment" />
+    </group>
+    <group android:id="@+id/SideNavPayment">
+        <item
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="@string/pay_fees" />
+        <item
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="@string/make_a_donation" />
+        <item
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="@string/transaction_history" />
+    </group>
+    <group android:id="@+id/SideNavLogOut">
+        <item
+            android:id="@+id/DestSignIn"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/log_out" />
+    </group>
+</menu>

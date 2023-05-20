@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/TVRemainingFees"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/remaining_fees"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVFeesAmount"
+        android:layout_width="414dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/FeesAmount"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVRemainingFees" />
+
+    <TextView
+        android:id="@+id/TVAmountOfTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/amount_of_transaction"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVFeesAmount" />
+
+    <EditText
+        android:id="@+id/ETPutYourAmountHere"
+        android:layout_width="238dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="84dp"
+        android:hint="@string/put_your_amount_here"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#052926"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVAmountOfTransaction"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/TVPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/payment_method"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPutYourAmountHere" />
+
+    <ImageButton
+        android:id="@+id/BtnFPX"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/blackborder"
+        android:clickable="true"
+        android:contentDescription="@string/FPX"
+        android:src="@drawable/fpxlogo"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/BtnCreditCard"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="112dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/blackborder"
+        android:contentDescription="@string/CreditCard"
+        android:scaleType="fitCenter"
+        android:src="@drawable/creditcard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

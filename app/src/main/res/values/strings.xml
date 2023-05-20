@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Payment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="FeesAmount">TextView</string>
+    <string name="amount_of_transaction">Amount Of Transaction</string>
+    <string name="remaining_fees">Remaining Fees</string>
+    <string name="put_your_amount_here">Put Your Amount Here</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="FPX">TODO</string>
+    <string name="CreditCard">TODO</string>
+    <string name="amount_of_donation">Amount Of Donation</string>
+    <string name="fpx">TODO</string>
+    <string name="credit">TODO</string>
+    <string name="donation_history">Donation History</string>
+    <string name="fees_payment_history">Fees Payment History</string>
+    <string name="academic_tracker">Academic Tracker</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="payment">Payment</string>
+    <string name="log_out">Log Out</string>
+    <string name="pay_fees">Pay Fees</string>
+    <string name="make_a_donation">Make A Donation</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Closed</string>
+    <string name="home_page">Home Page</string>
+</resources>
